@@ -81,7 +81,7 @@ class App extends React.Component {
             <tbody>
               {this.state.productList.map(product => {
                 return(
-                  <tr>
+                  <tr key={product.id}>
                     <td>
                       {product.name}
                     </td>
